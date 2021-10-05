@@ -4,6 +4,7 @@ import './main.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import CardBack from './components/CardBack.js';
+import { Box, Button, Container, Grid, Typography } from '@material-ui/core';
 
 
 class App extends React.Component {
@@ -11,7 +12,12 @@ class App extends React.Component {
   }
 
 
-
+  goBack = () => {
+    //set set to dealt cards false
+    this.setState({
+      dealtCards: false
+    })
+  }
   //Call 3rd party API for cards
   handleDealtCards = () => {
     axios.get(
@@ -36,27 +42,37 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <main>
-          <div className="container">
-            <div className="card-area">
+          <Container>
+            <Box className="card-area">
             {
               this.state.dealtCards ?
-              <div>
+              <Grid container direction="row" alignContent="right">
+                <Grid item direction="column">
+                 <Button onClick={this.goBack}>
+                    Back
+                  </Button>
+                </Grid>
                { 
               this.state.dealtCards.map((card)=> {
                 return(
-                  <div>
-                    <h3>{card.name}</h3>
-                    <p>{card.meaning_up}</p>
-                  </div>
+                  <Grid container item direction="column" alignItems="left">
+                    <Grid item alignItems="left">
+                      <Typography component="h3">{card.name}</Typography>
+                    </Grid>
+                    <br/>
+                    <Grid item>
+                      <Typography>{card.meaning_up}</Typography>
+                    </Grid>
+                  </Grid>
                 )
               })
               }
-              </div>
+              </Grid>
             :
               <CardBack onDeal={this.handleDealtCards}/>
             }
-            </div>
-          </div>
+            </Box>
+          </Container>
         </main>
         <Footer/>
       </div>
