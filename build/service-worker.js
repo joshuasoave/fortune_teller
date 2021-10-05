@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fortune_teller/precache-manifest.1523e8edab2ee64c71155352248b8639.js"
+  "/fortune_teller/precache-manifest.06a0737d80599ec1e83d4799f4cb68d9.js"
 );
 
 self.addEventListener('message', (event) => {
