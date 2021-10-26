@@ -1,8 +1,8 @@
 {
-  "name": "fortune-teller",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@joshuasoave/fortune-teller",
+  "version": "0.0.2",
   "homepage": "http://joshuasoave.github.io/fortune_teller",
+  "bugs": "https://github.com/joshuasoave/fortune_teller/issues",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@mui/material": "^5.0.2",
