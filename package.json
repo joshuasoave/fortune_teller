@@ -3,7 +3,12 @@
   "version": "0.0.4",
   "homepage": "http://joshuasoave.github.io/fortune_teller",
   "bugs": "https://github.com/joshuasoave/fortune_teller/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuasoave/fortune_teller.git"
+  },
   "dependencies": {
+    "@joshuasoave/fortune-teller": "^0.0.2",
     "@material-ui/core": "^4.11.0",
     "@mui/material": "^5.0.2",
     "@testing-library/jest-dom": "^4.2.4",
