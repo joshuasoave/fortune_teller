@@ -1,6 +1,6 @@
 {
   "name": "@joshuasoave/fortune-teller",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "homepage": "http://joshuasoave.github.io/fortune_teller",
   "bugs": "https://github.com/joshuasoave/fortune_teller/issues",
   "dependencies": {
