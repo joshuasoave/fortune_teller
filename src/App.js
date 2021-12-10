@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './main.css';
 import Header from './components/Header.js';
@@ -8,15 +8,13 @@ import { Box, Button, Container, Grid, Typography } from '@material-ui/core';
 
 
 const App = () => {
-  const [dealtCards, setdealtCards] = useState([])
-
+  const [dealtCards, setDealtCards] = useState([])
 
   const goBack = () => {
     //set set to dealt cards false
-    this.setState({
-      dealtCards: []
-    })
+    setDealtCards([])
   }
+
   //Call 3rd party API for cards
   const handleDealtCards = () => {
     axios.get(
@@ -27,9 +25,13 @@ const App = () => {
       // //change the name of tarot card to remove -
       // let fixedTarotName = tarotCard.name.replace(/-/g, " ")
       // console.log(fixedTarotName);
-      setdealtCards(response.data.cards)
+      setDealtCards(response.data.cards)
     })
   }
+
+  useEffect(()=>{
+
+  },[dealtCards])
 
     return (
       <div className="App">
