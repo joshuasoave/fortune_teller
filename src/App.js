@@ -28,9 +28,13 @@ const App = () => {
     })
   }
 
-  useEffect(()=>{
-
-  },[dealtCards])
+  const checkInverted = () => {
+    let x = Math.floor(Math.random() * 2)
+    console.log(x)
+    if(x){
+      return true
+    }
+  }
 
     return (
       <div className="App">
@@ -40,7 +44,7 @@ const App = () => {
             <Box className="card-area">
             {
               dealtCards.length > 0 ?
-              <Grid container direction="row" alignContent="right">
+              <Grid container direction="row" alignContent="flex-start">
                 <Grid item direction="column">
                  <Button onClick={goBack}>
                     Back
@@ -48,15 +52,28 @@ const App = () => {
                 </Grid>
                { 
                 dealtCards.map((card)=> {
-                  const randomNumber = 0
+                  //randomly generates a number to determine inverted or not
+                  const inverted = checkInverted()
                   return(
-                    <Grid container item direction="column" alignItems="left">
+                    <Grid container item direction="column" alignItems="flex-start">
                       <Grid item alignItems="left">
                         <Typography component="h3">{card.name}</Typography>
+                        {
+                          inverted ?
+                            <Typography component="h3">Inverted</Typography>
+                          :
+                            ""
+                        }
                       </Grid>
                       <br/>
                       <Grid item>
-                        <Typography>{card.meaning_up}</Typography>
+                        <Typography>
+                          { inverted ? 
+                              card.meaning_rev
+                              :
+                              card.meaning_up
+                          }
+                        </Typography>
                       </Grid>
                     </Grid>
                   )
