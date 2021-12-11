@@ -27,7 +27,6 @@ class App extends React.Component {
       // let tarotCard = response.data[0];
       // //change the name of tarot card to remove -
       // let fixedTarotName = tarotCard.name.replace(/-/g, " ")
-      // console.log(fixedTarotName);
       this.setState(
         {
           dealtCards: response.data.cards
