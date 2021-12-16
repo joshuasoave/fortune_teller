@@ -52,6 +52,7 @@ const App = () => {
                 </Grid>
                { 
                 dealtCards.map((card)=> {
+                  console.log(card)
                   //randomly generates a number to determine inverted or not
                   const inverted = checkInverted()
                   return(
