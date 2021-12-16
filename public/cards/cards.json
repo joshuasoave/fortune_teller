@@ -1,0 +1,12 @@
+{
+    "id": 2,
+    "name": "Page of Cups",
+    "arcana": "minor",
+    "suit": "cups",
+    "meaning_up": "A surprise; Potentially, a love offer",
+    "meaning_rev": "A lack of offers being presented especially in matters of love",
+    "description": "A young man holding a cup and a fish pops out of it. The waves of the ocean toss gently behind him.",
+    "keywords": ["water", "cup", "fish"],
+    "value": "page",
+    "value_int": 11
+}
