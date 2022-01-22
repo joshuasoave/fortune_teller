@@ -21,10 +21,6 @@ const App = () => {
     axios.get(
       "https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3"
     ).then((response) => {
-      console.log(response.data.cards);
-      // let tarotCard = response.data[0];
-      // //change the name of tarot card to remove -
-      // let fixedTarotName = tarotCard.name.replace(/-/g, " ")
       setDealtCards(response.data.cards)
     })
   }
