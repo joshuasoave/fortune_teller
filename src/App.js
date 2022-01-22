@@ -11,6 +11,8 @@ const App = () => {
   const [dealtCards, setDealtCards] = useState([])
   const theme = createTheme()
 
+  const timePeriod = ["Past", "Present", "Future"]
+
   const goBack = () => {
     //set set to dealt cards false
     setDealtCards([])
@@ -48,12 +50,13 @@ const App = () => {
                   </Button>
                 </Grid>
                { 
-                dealtCards.map((card)=> {
+                dealtCards.map((card, i)=> {
                   //randomly generates a number to determine inverted or not
                   const inverted = checkInverted()
                   return(
                     <Grid container item direction="column" spacing={2} alignItems="stretch">
                       <Grid item alignItems="left" xs={12} className="card-grid-item">
+                        <Typography align="left" component="h3">{timePeriod[i]}</Typography>
                         <Card sx={{minWidth: 275}}>
                           <CardActionArea>
                             <CardContent>
