@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap');
 
+
 /*HEADER*/
 header {
   height: 100px;
@@ -40,6 +41,10 @@ header {
 }
 
 /*DEALT CARD*/
+.card-grid-item {
+  margin: 16px !important;
+}
+
 .card-description h3 {
   text-transform: capitalize;
 }

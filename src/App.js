@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import './main.css';
+import './index.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import CardBack from './components/CardBack.js';
-import { Box, Button, Container, Grid, Typography } from '@material-ui/core';
+import { Box, Button, Container, Grid, Typography, Card, CardContent, CardActionArea, createTheme } from '@material-ui/core';
 
 
 const App = () => {
   const [dealtCards, setDealtCards] = useState([])
+  const theme = createTheme()
 
   const goBack = () => {
     //set set to dealt cards false
@@ -55,33 +56,37 @@ const App = () => {
                   //randomly generates a number to determine inverted or not
                   const inverted = checkInverted()
                   return(
-                    <Grid container item direction="column" alignItems="flex-start">
-                      <Grid item alignItems="left">
-                        <Typography component="h3">{card.name}</Typography>
-                        {
-                          inverted ?
-                            <Typography component="h3">Inverted</Typography>
-                          :
-                            ""
-                        }
-                      </Grid>
-                      <br/>
-                      <Grid item>
-                        <Typography>
-                          { inverted ? 
-                              card.meaning_rev
-                              :
-                              card.meaning_up
-                          }
-                        </Typography>
+                    <Grid container item direction="column" spacing={2} alignItems="stretch">
+                      <Grid item alignItems="left" xs={12} className="card-grid-item">
+                        <Card sx={{minWidth: 275}}>
+                          <CardActionArea>
+                            <CardContent>
+                              <Typography align="left" component="h3">{card.name}</Typography>
+                              {
+                                inverted ?
+                                  <Typography component="h3" align="left">Inverted</Typography>
+                                :
+                                  ""
+                              }
+                              <Typography>
+                                { inverted ? 
+                                    card.meaning_rev
+                                    :
+                                    card.meaning_up
+                                }
+                              </Typography>
+                            </CardContent>
+                          </CardActionArea>
+                        </Card>
                       </Grid>
                     </Grid>
                   )
-              })
-              }
+               })
+              }   
               </Grid>
             :
               <CardBack onDeal={handleDealtCards}/>
+              
             }
             </Box>
           </Container>
