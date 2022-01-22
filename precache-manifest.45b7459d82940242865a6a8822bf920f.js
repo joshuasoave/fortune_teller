@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee2a268f8cabc467a3c8b6b9a46bcdf0",
+    "revision": "ed2ea139bc9cb8070e0225b301e30e4c",
     "url": "/fortune_teller/index.html"
   },
   {
-    "revision": "b07f0ad6d3c1ae5692c6",
+    "revision": "a374f957e09ac773c8d5",
     "url": "/fortune_teller/static/css/main.c1aa4e09.chunk.css"
   },
   {
-    "revision": "42d98fee6a54f9292837",
-    "url": "/fortune_teller/static/js/2.5c55833d.chunk.js"
+    "revision": "ad11b4f629685b534ac7",
+    "url": "/fortune_teller/static/js/2.d5d6b8c3.chunk.js"
   },
   {
     "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/fortune_teller/static/js/2.5c55833d.chunk.js.LICENSE.txt"
+    "url": "/fortune_teller/static/js/2.d5d6b8c3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b07f0ad6d3c1ae5692c6",
-    "url": "/fortune_teller/static/js/main.d4c47345.chunk.js"
+    "revision": "a374f957e09ac773c8d5",
+    "url": "/fortune_teller/static/js/main.1a87cda1.chunk.js"
   },
   {
     "revision": "b3d053d8138bb673a0c9",

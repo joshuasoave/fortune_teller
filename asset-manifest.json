@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/fortune_teller/static/css/main.c1aa4e09.chunk.css",
-    "main.js": "/fortune_teller/static/js/main.d4c47345.chunk.js",
-    "main.js.map": "/fortune_teller/static/js/main.d4c47345.chunk.js.map",
+    "main.js": "/fortune_teller/static/js/main.1a87cda1.chunk.js",
+    "main.js.map": "/fortune_teller/static/js/main.1a87cda1.chunk.js.map",
     "runtime-main.js": "/fortune_teller/static/js/runtime-main.cf46a3e6.js",
     "runtime-main.js.map": "/fortune_teller/static/js/runtime-main.cf46a3e6.js.map",
-    "static/js/2.5c55833d.chunk.js": "/fortune_teller/static/js/2.5c55833d.chunk.js",
-    "static/js/2.5c55833d.chunk.js.map": "/fortune_teller/static/js/2.5c55833d.chunk.js.map",
+    "static/js/2.d5d6b8c3.chunk.js": "/fortune_teller/static/js/2.d5d6b8c3.chunk.js",
+    "static/js/2.d5d6b8c3.chunk.js.map": "/fortune_teller/static/js/2.d5d6b8c3.chunk.js.map",
     "index.html": "/fortune_teller/index.html",
-    "precache-manifest.2f0fdf8ba8a3a6571ebc82dd0b565204.js": "/fortune_teller/precache-manifest.2f0fdf8ba8a3a6571ebc82dd0b565204.js",
+    "precache-manifest.45b7459d82940242865a6a8822bf920f.js": "/fortune_teller/precache-manifest.45b7459d82940242865a6a8822bf920f.js",
     "service-worker.js": "/fortune_teller/service-worker.js",
     "static/css/main.c1aa4e09.chunk.css.map": "/fortune_teller/static/css/main.c1aa4e09.chunk.css.map",
-    "static/js/2.5c55833d.chunk.js.LICENSE.txt": "/fortune_teller/static/js/2.5c55833d.chunk.js.LICENSE.txt"
+    "static/js/2.d5d6b8c3.chunk.js.LICENSE.txt": "/fortune_teller/static/js/2.d5d6b8c3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cf46a3e6.js",
-    "static/js/2.5c55833d.chunk.js",
+    "static/js/2.d5d6b8c3.chunk.js",
     "static/css/main.c1aa4e09.chunk.css",
-    "static/js/main.d4c47345.chunk.js"
+    "static/js/main.1a87cda1.chunk.js"
   ]
 }
