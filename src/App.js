@@ -43,9 +43,9 @@ const App = () => {
             <Box className="card-area">
             {
               dealtCards.length > 0 ?
-              <Grid container direction="row" alignContent="flex-start">
-                <Grid item direction="column">
-                 <Button onClick={goBack}>
+              <Grid container direction="row" alignItems="flex-end">
+                <Grid item direction="column" className="back-btn">
+                 <Button className="back-btn" onClick={goBack}>
                     Back
                   </Button>
                 </Grid>

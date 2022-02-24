@@ -18,6 +18,11 @@ header {
   font-family: 'Indie Flower', cursive;
 }
 
+.back-btn {
+  position: absolute !important;
+  left: 2 !important;
+}
+
 /*MAIN*/
 .container {
   width: 70%;
